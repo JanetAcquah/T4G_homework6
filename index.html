@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework6</title><script src="https://kit.fontawesome.com/cacd39bae2.js" crossorigin="anonymous"></script>
     <style>
-    div{
-    background-image: url(images/cocoyam1.jpg);
+       .big_div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px;
+        margin-bottom: 20px;
+        
+       } 
+
+
+    .big-div1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px;  
+    }
+    .small_div{
+        border: 5px solid blue;
+    }
+    img{
+    width: 250px;
+    }
+    .small_div:hover{
+        border: 3px dotted greenyellow;
+    }
+
+    p{
+        background-color:blueviolet;
+    }
+    .header_div{
+    background-image: url(images/rawfood.jfif);
     height: 150px;
     width: 25%;
     display: block;
@@ -37,44 +66,86 @@
         border-radius: 20px;
 
     }
+    .container{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    height: 100px;
+    }
+    .news{
+        background-color:rgb(44, 44, 71);
+    }
+    
+
+    
+
+
+
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="pages/about.html">About</a></li>
-    <li><a href="pages/product.html">Products</a></li>
-    <li><a href="pages/contats.html">Contact Us</a></li>
-    <li><a href="pages/login.html">Login</a></li>
-    <li><a href="pages/signup.html">Sign up</a></li>
+        <ul class="container">
+            <img src="images/logo.jfif" alt="" style="height: 100px;width: 100px; margin-right: 350px;">
+    <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+    <li><a href="pages/about.html"  style="text-decoration: none;">About</a></li>
+    <li><a href="pages/product.html"  style="text-decoration: none;">Products</a></li>
+    <li><a href="pages/contact.html"  style="text-decoration: none;">Contact Us</a></li>
+    <li><a href="pages/login.html"  style="text-decoration: none;">Login</a></li>
+    <li><a href="pages/signup.html"  style="text-decoration: none;">Sign up</a></li>
             
-        </ul>
-        <h1>AFRICAN FOOD PRODUCTS</h1>
-<div class="cocoyam1.jpg"> <p>Taste The Raw Goodness Of Africa</p> <button><a href="pages/product.html">Explore Our Products</a></div></button>
-<p class="cocoyam">Cocoyam is herbaceo erennial plants belonging to the family araceae
-and are grown primary for their edible roots.Water and weeds control are for the first six month.
-Cocoyam prevent digestive problems such as indidestion,comstipation and diarrhoea</p>
-<h1>African plantain</h1>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYaQyZ7OgD8X-Q2Ac5s27Pm3mK_sn_QoOqQ&s" alt="This is an image og plantain">
-<p>The plantain (Musa paradisiaca) is a tall plant which can grow from 10 to 33 feet high. It has a cone-shaped false "trunk" which is formed by the leaf sheaths of its spirally arranged leaves. The fruit, which is green, is typically larger than and closely related to the common banana (Musa sapientum).
+      </ul>
+    </nav>       
+<div class="header_div"><p>Our Raw Food Product</p> <button><a href="pages/product.html">Explore Our Products</a></button></div>
+<p>African food is diverse,and when you are talking about food ,the culture comes in too.
+With over 54 countries and 3,000 ethnic groups.African food has much to offer.
+In the website,we will explore some fascinating facts about African foods .The food is rich in flovor and reflects the continent's
+varied history,geography and culture traditions.Buttonlines,you can be there are many African countries with great food.A typical West African
+ meal is made with starchy items and can contain meat, fish as well as various spices and herbs. 
+ A wide array of staples are eaten across the region, including fufu, banku, kenkey (originating from Ghana), foutou, couscous, tô, 
+ and garri, which are served alongside soups and stews.
 </p>
-<h1>Garden eggs</h1>
-<img src="https://revolfoods.com/wp-content/uploads/2021/10/garden-eggs-2.png" alt="">
-<p>Garden egg is a type of eggplant that is used as a food crop in several
-     countries in Africa. It is a small, white fruit with a teardrop or roundish
-      shape that is valued for its bitterness. There is debate on the specific species of garden eggs
-      Garden eggs are a teardrop fruit indigenous to Sub-Saharan Africa.
-       It is very similar in nature to the purple eggplant/aubergine many know; however, it has its own
-        distinctive features. The Garden egg gets its name from its pale colour which
-       resembles eggs</p>
+<div class="big_div">
+ <div class="small_div">
+    <h1> AFRICAN PLANTAIN</h1> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYaQyZ7OgD8X-Q2Ac5s27Pm3mK_sn_QoOqQ&s" alt="This is an image og plantain">
+</div>
 
-<nav>
+<div class="small_div">
+    <h1>AFRICAN COCOYAM</h1>
+    <img src="images/cocoyam1.jpg" alt="">
+</div> 
+<div class="small_div">
+    <h1> AFRICAN YAM</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6r9jjRUYwsaCiunteckwXHKUbiFXn0k6rsw&s" alt="">
+</div>
+</div>
+</div>
+
+<div class="big-div1">
+    
+<div class="small_div">
+    <h1> AFRICAN OKRO</h1> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzch83AWCWiohWQi6PN_NCXr36IpIcEdwHIg&s" alt="">
+</div>
+<div class="small_div">
+    <h1> AFRICAN CASSAVA</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-Bw8diL0dZb8eIPjJZ4o16a6O0Hd-ZT8Sw&s" alt="">
+</div>
+<div class="small_div">
+    <h1>AFRICAN TOMATOES</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJWQ8iLIuJRfAecs46pTXbQU6_wLEp-CPEoA&s" alt="">
+</div>
+</div>
+
+
+<div class="news">
 <h2>Newsletter</h2>
 <form action="">
 <label for=>email</label>
 <input type="email">
 </form>
+</div>
 <hr>
 <footer>please fellow us on our social.👍👍</footer>
 <i class="fa-brands fa-facebook"></i>
