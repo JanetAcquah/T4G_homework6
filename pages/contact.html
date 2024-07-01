@@ -11,6 +11,55 @@
          justify-content: space-evenly;
          height: 100px;
          }
+         .page2{
+           background-color:rgb(44, 44, 71);
+        display: flex;
+        padding: 40PX;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-size: 50PX;
+         }
+
+         .page2button{
+            padding: 20px ;
+         }
+
+         form{
+            display: flex;
+            justify-content: space-between;
+            background-color:rgb(44, 44, 71);
+         }
+
+         .text{
+            /* background-color:rgb(44, 44, 71); */
+        display: flex;
+        padding: 20PX;
+        align-items: center;
+        justify-content: space-between;
+         }
+         .text2{
+            /* background-color:rgb(44, 44, 71); */
+        display: flex;
+        padding:20PX;
+        align-items: center;
+        justify-content: space-between;
+         }
+         .name{
+            font-size: 40px;
+            color: white;
+         }
+         .name2{
+            font-size: 40px;
+            color: white;
+         }
+         .nam{
+            padding: 20px;
+         }
+         .nam2{
+            padding: 20px;
+         }
+         
         
     </style>
 </head>
@@ -27,22 +76,26 @@
             
       </ul>
     </nav> 
-<h3>This is the contact us page.</h3>
-<p>Want to connect us more?<button><a href="login.html">click to login</a></button></p>
+<h3 class="page">This is the contact us page.</h3>
+<p class="page2">Want to connect us more?<button class="page2button"><a href="login.html">click to login</a></button></p>
 
 <form action="">
+    <div class="text">
+        <label for="full name" class="name">Your name</label>
+        <input type="text" placeholder="Name" class="nam">
+    </div>
+    <div class="text2">
+        <label for="Email" class="name2">Email</label>
+        <input type="text"placeholder="Your Email" class="nam2">
+    </div>
     <div>
-<label for="full name">Your name</label>
-<input type="text" placeholder="Name">
-</div>
-<div>
-<label for="Email">Email</label>
-<input type="text"placeholder="Your Email">
-</div>
-<textarea name="" id=""cols="30" rows="12"></textarea>
-<div>
-<button type="submit">send</button>
-</div>
+        <textarea name="" id=""cols="30" rows="12"> Enter a text here</textarea>
+        <div>
+            <button type="submit">send</button>
+        </div>
+    </div>
+</form>
+
 <hr>
 <footer>
 <p>please follow us on our social.👍👍</p>
@@ -51,7 +104,7 @@
 
 
 
-</form>
+
 
     
 </body>

@@ -47,6 +47,12 @@
     align-items: center;
     border: 30px solid black;
     color: black;
+    }
+    .paragraph{
+        padding: 40px;
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        font-size: 23px;
 
     }
     button{
@@ -74,7 +80,31 @@
     }
     .news{
         background-color:rgb(44, 44, 71);
+        display: flex;
+        padding: 40PX;
+        align-items: center;
+        justify-content: space-between;
     }
+    
+    .letter{
+        font-size: 40px;
+        color: white;
+    }
+.mail{
+
+    font-size:30px;
+    padding:10px;
+    /* color: white; */
+}
+.emailtext{
+    font-size: 50px;
+    color: white;
+}
+.sub{
+    font-size: 50px;
+}
+
+
     
 
     
@@ -97,7 +127,7 @@
       </ul>
     </nav>       
 <div class="header_div"><p>Our Raw Food Product</p> <button><a href="pages/product.html">Explore Our Products</a></button></div>
-<p>African food is diverse,and when you are talking about food ,the culture comes in too.
+<p class="paragraph">African food is diverse,and when you are talking about food ,the culture comes in too.
 With over 54 countries and 3,000 ethnic groups.African food has much to offer.
 In the website,we will explore some fascinating facts about African foods .The food is rich in flovor and reflects the continent's
 varied history,geography and culture traditions.Buttonlines,you can be there are many African countries with great food.A typical West African
@@ -107,17 +137,17 @@ varied history,geography and culture traditions.Buttonlines,you can be there are
 </p>
 <div class="big_div">
  <div class="small_div">
-    <h1> AFRICAN PLANTAIN</h1> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYaQyZ7OgD8X-Q2Ac5s27Pm3mK_sn_QoOqQ&s" alt="This is an image og plantain">
+    <h1>AFRICAN MAIZE</h1> 
+    <img src="https://prestigecredit.co.za/wp-content/uploads/2020/02/Maize-in-SA.jpg" alt="">
 </div>
 
 <div class="small_div">
-    <h1>AFRICAN COCOYAM</h1>
-    <img src="images/cocoyam1.jpg" alt="">
+    <h1>AFRICAN CEREALS</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST1iFkEKYbUiEZheqsGkIUZRl9XJjYBXyzNw&s" alt="">
 </div> 
 <div class="small_div">
-    <h1> AFRICAN YAM</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6r9jjRUYwsaCiunteckwXHKUbiFXn0k6rsw&s" alt="">
+    <h1>AFRICAN FRUIT</h1>
+<img src="images/fruits.jpg" alt="">  
 </div>
 </div>
 </div>
@@ -140,10 +170,11 @@ varied history,geography and culture traditions.Buttonlines,you can be there are
 
 
 <div class="news">
-<h2>Newsletter</h2>
+<h2 class="letter">Newsletter</h2>
 <form action="">
-<label for=>email</label>
-<input type="email">
+<label class="emailtext" for="email">Email</label>
+<input type= "email" class="mail">
+<input type="submit" value=" subscribe" class="sub">
 </form>
 </div>
 <hr>
