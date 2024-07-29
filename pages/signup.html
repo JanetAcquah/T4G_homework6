@@ -5,62 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up page</title><script src="https://kit.fontawesome.com/cacd39bae2.js" crossorigin="anonymous"></script>
     <style>
-         
+       body{
+        background-color: burlywood;
+       }  
     .container{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
     height: 100px;
     }
+    .janet{
+        background-color:violet;
+        font-size: 60px;
+        margin-right:30%;
+    }
+   
+  .sign{
+    width: 30%;
+    height: 300px;
+  }
+  .medicine{
+  display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
     </style>
 </head>
 <body>
     <nav>
-        <ul class="container">
-            <img src="../images/logo.jfif" alt="" style="height: 100px;width: 100px; margin-right: 350px;">
-    <li><a href="../index.html" style="text-decoration: none;">Home</a></li>
-    <li><a href="../pages/about.html"  style="text-decoration: none;">About</a></li>
-    <li><a href="../pages/product.html"  style="text-decoration: none;">Products</a></li>
-    <li><a href="../pages/contact.html"  style="text-decoration: none;">Contact Us</a></li>
-    <li><a href="../pages/login.html"  style="text-decoration: none;">Login</a></li>
-    <li><a href="../pages/signup.html"  style="text-decoration: none;">Sign up</a></li>
+    <ul class="container">
+ <img src="../images/logo.jfif" alt="" style="height:150px;width: 150px;margin-right: 40%;">
+    <li><a href="../index.html" style="text-decoration: none;">HOME</a></li>
+    <li><a href="../pages/about.html"  style="text-decoration: none;">ABOUT</a></li>
+    <li><a href="../pages/product.html"  style="text-decoration: none;">PRODUCTS</a></li>
+    <li><a href="../pages/contact.html"  style="text-decoration: none;">CONTACT US</a></li>
+    <li><a href="../pages/login.html"  style="text-decoration: none;">LOGIN</a></li>
+    <li><a href="../pages/signup.html"  style="text-decoration: none;">SIGN UP</a></li>
             
       </ul>
-    </nav> 
-    <h1>Signup page</h1>
+    </nav>
+<h1 style="font-size: 50px;margin-left: 30%;">THIS IS OUR SIGNUP PAGE</h1>
     <form action="">
+     <div class="janet">
         <div>
             <label for="">First Name</label>
-            <input type="text"name="" placeholder="First Name">
-            </div>
-            <div>
+            <input type="text"  style="font-size: 30px;display: flex;"name="" placeholder="First Name">
+      </div>
+      <div>
         <label for="">Last Name</label>
-        <input type="text" name="" placeholder="Last Name">
+        <input type="text"   style="font-size: 30px; display: flex;"name="" placeholder="Last Name">
             </div>
-            <div>
+     <div>
                 <label for="">Phone</label>
-                <input type="text">
-            </div>
-            <div>
+                <input type="text" style="font-size: 30px;display: flex;" >
+     </div>
+    <div>
             <label for="">Date of Birth</label>
-            <input type="text" name=""id=""placeholder="mm/dd/yyyy">
-</div>
+            <input type="text" style="font-size: 30px; display: flex;" name=""placeholder="mm/dd/yyyy">
+        </div>
 <div>
-    <label for="">Email</label>
-    <input type="text"name=""placeholder="Email">
+    <label for="" class="">Email</label>
+    <input type="text" style="font-size:30px ; display: flex;" name=""placeholder="Email">
 </div>
 <div>
     <label for="">Password</label>
-    <input type="text">
+    <input type="text"  style="font-size: 30px; display: flex;">
 </div>
 <div>
     <label for="">Re-enter Password</label>
-    <input type="text">
+    <input type="text" style="font-size: 30px; display: flex;">  
 </div>
-<button>
-    submit
-</button>
+     </div>
+<form action="">
+<input type="submit" value="Signup" style="font-size: 50px;margin-left: 80%;">
+</form>
+
 <hr>
+<div style="font-size: 40px;">
 <p><b>Please follow us on our socials👍👍</b></p>
 <i class="fa-brands fa-facebook"></i>
 <i class="fa-brands fa-youtube"></i>
@@ -68,11 +90,11 @@
 <i class="fa-brands fa-tiktok"></i>
 <i class="fa-brands fa-instagram"></i>
 <i class="fa-brands fa-linkedin"></i>
+</div>
 
 
 
-
-    </form>
+    
 
 </body>
 </html>

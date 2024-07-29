@@ -5,43 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title><script src="https://kit.fontawesome.com/cacd39bae2.js" crossorigin="anonymous"></script>
     <style>
+        body{
+            background-color: burlywood;
+        }
          .container{
          display: flex;
          list-style: none;
          justify-content: space-evenly;
          height: 100px;
          }
-        
+          .agnes{
+            font-size: 80px;
+            background-color: violet;
+            margin-right: 40%;
+          }
+          .ttt{
+    padding: 40px;
+        color: white;
+        font-size: 23px;
+        background-color: violet;
+          }
+          .medicine{
+            display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
     </style>
 </head>
 <body>
     <nav>
         <ul class="container">
-            <img src="../images/logo.jfif" alt="" style="height: 100px;width: 100px; margin-right: 350px;">
-    <li><a href="../index.html" style="text-decoration: none;">Home</a></li>
-    <li><a href="../pages/about.html"  style="text-decoration: none;">About</a></li>
-    <li><a href="../pages/product.html"  style="text-decoration: none;">Products</a></li>
-    <li><a href="../pages/contact.html"  style="text-decoration: none;">Contact Us</a></li>
-    <li><a href="../pages/login.html"  style="text-decoration: none;">Login</a></li>
-    <li><a href="../pages/signup.html"  style="text-decoration: none;">Sign up</a></li>
+            <img src="../images/logo.jfif" alt="" style= "height: 100px;width: 100px; margin-right: 350px;" >
+    <li><a href="../index.html" style="text-decoration: none;">HOME</a></li>
+    <li><a href="../pages/about.html"  style="text-decoration: none;">ABOUT</a></li>
+    <li><a href="../pages/product.html"  style="text-decoration: none;">PRODUCT</a></li>
+    <li><a href="../pages/contact.html"  style="text-decoration: none;">CONTACT US</a></li>
+    <li><a href="../pages/login.html"  style="text-decoration: none;">LOGIN</a></li>
+    <li><a href="../pages/signup.html"  style="text-decoration: none;">SIGN UP</a></li>
             
       </ul>
     </nav> 
-        <h1>Login Page</h1>
-        <form action="">
+        <h1 style="margin-left: 15%;">HI👋😘😘 HERE COMES OUR LOGIN PAGE LET EXPLORE MORE</h1> 
+        <div><img id="medicine" src="../images/medicine.jfif" alt="" style="width: 500px;height:500px;margin-left: 30%;"></div>
+   <p class="ttt">Plant-based products used to treat diseases or to maintain health, are called herbal products,
+         botanical products, or phytomedicines. A product made from plant sources and used only for
+          internal use is called an herbal supplementThe practice of using herbal
+           supplements dates back thousands of years. Today, herbal supplement use is common in the U.S.
+            But they are not for everyone. They are not subject to close scrutiny by the FDA or other governing agencies.
+             For this reason, herbal supplements are still controversial. Talk with your healthcare provider about any symptoms
+              or conditions you have. 
+             Discuss the use of herbal supplements..</p>
+             <div class="medicine">
+                <img class="sign" src="../images/carrots.jfif" alt="" style="width:250px;height: 300px;">
+                <img class="sign" src="../images/herbs.jfif" alt="" style="width:250px;height: 300px;" >
+                <img src="../images/mintleaves.jfif" alt="" style="width: 250px;height: 300px;">
+            </div> 
             <div>
-                <label for="">Email</label>
-                <input type="text" name="" id="" placeholder="email">
+        </div>
+     <div class="agnes">
+            <div>
+                <label for="">Email</labe>
+                <input type="text"  style="font-size: 30px; display: flex;" id="" placeholder="email">
              </div>
              <div>
                 <label for="">Password</label>
-                <input type="text">
+                <input type="text" style="font-size: 30px;display: flex;">
              </div>
-            <button>
-                submit
-            </button>
+             <form action="">
+                <input type="submit" value="Signup" style="font-size: 50px;">
+                </form>
+     </div>
+     <div style="font-size:40px;">
+     <form action="">
             <hr>
-           <P><b>Please follow us on our socials👍👍</b></P>
+           <P><b class="SS">Please follow us on our socials👍👍</b></P>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -49,7 +87,7 @@
             <i class="fa-brands fa-youtube"></i>
         
         </form>
-    
-       
+    </div>
+     <script src="../src/login.js"></script>  
 </body>
 </html>

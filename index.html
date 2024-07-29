@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework6</title><script src="https://kit.fontawesome.com/cacd39bae2.js" crossorigin="anonymous"></script>
+
     <style>
+        body{background-color:burlywood;}
        .big_div{
         display: flex;
         flex-wrap: wrap;
@@ -28,7 +30,7 @@
     width: 250px;
     }
     .small_div:hover{
-        border: 3px dotted greenyellow;
+        border: 2px dotted greenyellow;
     }
 
     p{
@@ -36,8 +38,8 @@
     }
     .header_div{
     background-image: url(images/rawfood.jfif);
-    height: 150px;
-    width: 25%;
+    height: 300px;
+    width: 35%;
     display: block;
     margin: auto;
     border-radius: 20px;
@@ -55,7 +57,7 @@
         font-size: 23px;
 
     }
-    button{
+    .headbutton{
         background-color: white;
         font-size:13px ;
         color: white;
@@ -81,7 +83,6 @@
     .news{
         background-color:rgb(44, 44, 71);
         display: flex;
-        padding: 40PX;
         align-items: center;
         justify-content: space-between;
     }
@@ -103,30 +104,50 @@
 .sub{
     font-size: 50px;
 }
+.para{
+    font-size: 17px;
+   color: white;
+   background-color:rgb(44, 44, 71); ;
 
+}
+.cent{
+    text-align: center;
+        font-size: 50px;
 
-    
+}
 
-    
+.name{
+    text-align: center;
+}
+#adiv{
+    display: none;
+}
 
-
+#less{
+    display: none;
+    margin-left: 500px;
+}
+#picture{
+    margin-left: 450px;
+}
 
     </style>
 </head>
 <body>
-    <nav>
+     <nav>
         <ul class="container">
-            <img src="images/logo.jfif" alt="" style="height: 100px;width: 100px; margin-right: 350px;">
-    <li><a href="index.html" style="text-decoration: none;">Home</a></li>
-    <li><a href="pages/about.html"  style="text-decoration: none;">About</a></li>
-    <li><a href="pages/product.html"  style="text-decoration: none;">Products</a></li>
-    <li><a href="pages/contact.html"  style="text-decoration: none;">Contact Us</a></li>
-    <li><a href="pages/login.html"  style="text-decoration: none;">Login</a></li>
-    <li><a href="pages/signup.html"  style="text-decoration: none;">Sign up</a></li>
+            <img src="images/logo.jfif" alt="" style="height: 100px;width: 100px;">
+    <li><a href="index.html" style="text-decoration: none;">HOME</a></li>
+    <li><a href="pages/about.html"  style="text-decoration: none;">ABOUT</a></li>
+    <li><a href="pages/product.html"  style="text-decoration: none;">PRODUCTS</a></li>
+    <li><a href="pages/contact.html"  style="text-decoration: none;">CONTACT US</a></li>
+    <li><a href="pages/login.html"  style="text-decoration: none;">LOGIN</a></li>
+    <li><a href="pages/signup.html"  style="text-decoration: none;">SIGN UP</a></li>
             
       </ul>
-    </nav>       
-<div class="header_div"><p>Our Raw Food Product</p> <button><a href="pages/product.html">Explore Our Products</a></button></div>
+    </nav>  
+    <nav>     
+<div class="header_div"><p id="food">Our Raw Food Product</p> <button class="headbutton" id="fruit"><a href="pages/product.html">Explore Our Products</a></button></div>
 <p class="paragraph">African food is diverse,and when you are talking about food ,the culture comes in too.
 With over 54 countries and 3,000 ethnic groups.African food has much to offer.
 In the website,we will explore some fascinating facts about African foods .The food is rich in flovor and reflects the continent's
@@ -135,58 +156,92 @@ varied history,geography and culture traditions.Buttonlines,you can be there are
  A wide array of staples are eaten across the region, including fufu, banku, kenkey (originating from Ghana), foutou, couscous, tô, 
  and garri, which are served alongside soups and stews.
 </p>
+<h1 class="cent" id="ppp">Browse Through The African Goodness</h1>
+</nav>
 <div class="big_div">
- <div class="small_div">
-    <h1>AFRICAN MAIZE</h1> 
-    <img src="https://prestigecredit.co.za/wp-content/uploads/2020/02/Maize-in-SA.jpg" alt="">
+    <div class="small_div"> 
+        <img id="maize" src="images/maize2.jfif" alt=""  style="height: 300px; width: 300px;" id="spices">
+        <h1>AFRICAN MAIZE</h1> 
+    </div>
+    <div class="small_div">
+        <img id="vegies" src="images/vegetales.jpg" alt=""  style="height: 300px; width: 300px;">
+        <h1>AFRICAN VEGIES</h1>
+    </div> 
+    <div class="small_div">
+        <img id="fruits" src="images/fruits.jpg" alt=""   style="height: 300px; width: 300px;"> 
+        <h1>AFRICAN FRUIT</h1> 
+    </div>
+    <div class="small_div"> 
+       <img id="mint" src="images/mintleaves.jfif" alt=""  style="height: 300px; width: 300px;">
+       <h1>AFRICAN MINT</h1> 
+   </div>
+   <div class="small_div">
+       <img id="nuts" src="images/nuts.avif" alt=""  style="height: 300px; width: 300px;">
+       <h1>AFRICAN NUTS</h1>
+   </div> 
+   <div class="small_div">
+        <img id="Nido" src="images/nido.jfif" alt=""   style="height: 300px; width: 300px;"> 
+        <h1>AFRICAN PRODUCT</h1> 
+   </div>
+</div>
+<div>
+   <button class="name" id="picture">Click to load more images in the gallery</button>
+</div>
+   <!-- this is a different copied -->
+
+   <div class="big_div" id="adiv">
+    
+<div class="small_div"> 
+    <img id="cereals" src="images/cereals.jpg" alt=""  style="height: 300px; width: 300px;">
+    <h1> AFRICAN CEREALS</h1>
+</div>
+<div class="small_div">
+    <img id="leavy" src="images/leavyvegetables.jpg" alt=""  style="height: 300px; width: 300px;">
+    <h1> AFRICAN FOODS</h1>
+</div>
+<div class="small_div">
+    <img id="carrot" src="images/carrots.jfif" alt=""  style="height: 300px; width: 300px;">
+    <h1>AFRICAN VEGIES</h1>
+</div>
+<div class="small_div"> 
+    <img src="images/green veg.jpg" alt=""  style="height: 300px; width: 300px;" >
+    <h1>AFRICAN VEG</h1> 
 </div>
 
 <div class="small_div">
-    <h1>AFRICAN CEREALS</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST1iFkEKYbUiEZheqsGkIUZRl9XJjYBXyzNw&s" alt="">
+    <img src="images/okro.jfif" alt=""  style="height: 300px; width: 300px;">
+    <h1>AFRICAN OKRO</h1>
 </div> 
 <div class="small_div">
-    <h1>AFRICAN FRUIT</h1>
-<img src="images/fruits.jpg" alt="">  
+<img src="images/mixedfoods.jfif" alt=""   style="height: 300px; width: 300px;">
+<h1>AFRICAN FOODS</h1>  
 </div>
 </div>
-</div>
-
-<div class="big-div1">
-    
-<div class="small_div">
-    <h1> AFRICAN OKRO</h1> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzch83AWCWiohWQi6PN_NCXr36IpIcEdwHIg&s" alt="">
-</div>
-<div class="small_div">
-    <h1> AFRICAN CASSAVA</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-Bw8diL0dZb8eIPjJZ4o16a6O0Hd-ZT8Sw&s" alt="">
-</div>
-<div class="small_div">
-    <h1>AFRICAN TOMATOES</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJWQ8iLIuJRfAecs46pTXbQU6_wLEp-CPEoA&s" alt="">
-</div>
-</div>
-
+<div><button id="less">show less images</button></div>
 
 <div class="news">
-<h2 class="letter">Newsletter</h2>
-<form action="">
-<label class="emailtext" for="email">Email</label>
-<input type= "email" class="mail">
-<input type="submit" value=" subscribe" class="sub">
-</form>
+    <div>
+        <h2 class="letter">Newsletter</h2>
+        <p class="para">Would you like to recieve monthly information about our products and services</p>
+    </div>
+    <form action="">
+        <label class="emailtext" for="email">Email</label>
+        <input type= "email" class="mail">
+        <input type="submit" value=" subscribe" class="sub">
+    </form>
 </div>
 <hr>
-<footer>please fellow us on our social.👍👍</footer>
-<i class="fa-brands fa-facebook"></i>
+
+<footer style="font-size: 40PX;">please fellow us on our social.👍👍</footer>
+<h1>African Goodness</h1>
+<i class= "fa-brands fa-facebook"></i>
 <i class="fa-brands fa-instagram"></i>
 <i class="fa-brands fa-youtube"></i>
 <i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-tiktok"></i>
-</nav>
 
 
-    
+
+
+<script src="src/index.js"></script>    
 </body>
 </html>
